@@ -1,0 +1,25 @@
+.date-message {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.today-message {
+    font-size: 12px;
+}
+
+.todo-view-toggle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.todo-view-toggle {
+    height: min-content;
+}

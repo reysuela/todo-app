@@ -1,0 +1,14 @@
+<div class="todo-card" *ngIf="todoItem.isComplete">
+    <mat-form-field class="full-width">
+        <input matInput #inputTodo [(ngModel)]="todoItem.name" disabled>
+    </mat-form-field>
+    <button class="todo-delete" mat-mini-fab color="warn" (click)="deleteTodo()">
+        <mat-icon>delete</mat-icon>
+    </button>
+</div>
+<div class="todo-card" *ngIf="!todoItem.isComplete">
+    <mat-checkbox class="todo-checkbox" (change)="completeTodo()"></mat-checkbox>
+    <mat-form-field class="full-width todo-input">
+        <input matInput #inputTodo [(ngModel)]="todoItem.name" (input)="updateTodo(inputTodo.value)">
+    </mat-form-field>
+</div>

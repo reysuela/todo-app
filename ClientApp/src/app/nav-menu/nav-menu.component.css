@@ -1,0 +1,16 @@
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.github-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.github-container:hover {
+    cursor: pointer;
+}

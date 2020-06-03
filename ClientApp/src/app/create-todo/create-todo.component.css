@@ -1,0 +1,10 @@
+.create-todo-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.create-button {
+    margin: auto 0px auto 8px;
+}

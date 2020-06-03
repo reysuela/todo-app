@@ -1,0 +1,9 @@
+<div class="create-todo-card">
+    <mat-form-field class="full-width">
+        <mat-label>Create a todo</mat-label>
+        <input matInput #inputTodo placeholder="What needs to get done?" (keyup.enter)="createTodo(inputTodo.value); inputTodo.value='';">
+    </mat-form-field>
+    <button class="create-button" mat-mini-fab color="primary" (click)="createTodo(inputTodo.value); inputTodo.value='';">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>

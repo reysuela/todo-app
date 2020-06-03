@@ -1,0 +1,27 @@
+<div class="home-container">
+  <div>
+    <div class="today-message text-muted">Today is...</div>
+    <div class="date-message">{{date}}</div>
+  </div>
+  <div class="todo-view-toggle-container">
+    <mat-button-toggle-group 
+      name="todoViewToggle"
+      class="todo-view-toggle"
+      [(ngModel)]="isViewingIncompleteTodos"
+    >
+      <mat-button-toggle [value]="true" (click)="setIsViewingIncompleteTodos(true)">
+        Todo
+      </mat-button-toggle>
+      <mat-button-toggle [value]="false" (click)="setIsViewingIncompleteTodos(false)">
+        Complete
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+</div>
+<div *ngIf="isViewingIncompleteTodos">
+  <app-create-todo></app-create-todo>
+  <app-todo-item-list [todosAreComplete]="false"></app-todo-item-list>
+</div>
+<div *ngIf="!isViewingIncompleteTodos">
+  <app-todo-item-list [todosAreComplete]="true"></app-todo-item-list>
+</div>

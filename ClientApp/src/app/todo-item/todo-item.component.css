@@ -1,0 +1,23 @@
+.todo-card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    padding: 16px 16px;
+}
+
+.todo-card:hover {
+    background-color: #B2EBF2;
+    transition: 250ms;
+}
+
+.todo-delete {
+    margin: auto 0px auto 16px;
+}
+
+.todo-input {
+    margin-left: 16px;
+}
+
+.todo-checkbox {
+    margin: auto 0px auto 0px;
+}

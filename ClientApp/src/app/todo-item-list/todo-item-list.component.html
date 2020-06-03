@@ -1,0 +1,7 @@
+<div class="todo-item-list">
+    <div *ngIf="todoItems">
+        <div class="todo-item" *ngFor="let todo of todoItems">
+            <app-todo-item [todoItem]="todo"></app-todo-item>
+        </div>
+    </div>
+</div>
